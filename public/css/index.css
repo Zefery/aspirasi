@@ -1,0 +1,27 @@
+marquee{
+    font-size: 25px;
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+}
+.mid blockquote p{
+    font-size: 20px;
+}
+.tulisan{
+    text-align: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+.selamat{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.statuspengaduan{
+    text-align: center;
+}
+.modal-content{
+    border-radius: 20px;
+}
