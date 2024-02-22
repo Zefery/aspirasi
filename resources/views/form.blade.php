@@ -56,21 +56,7 @@
                     </div> <br>
 
                     <!-- Tombol Kirim -->
-                    <button type="submit" class="btn btn-none rounded-3">Kirim</button>
-                    <style>
-                    .btn-none {
-                        background-color: transparent;
-                        color: green;
-                        border-color: green;
-                        border-radius: 3px;
-                        transition: background-color 0.3s, color 0.3s;
-                    }
-
-                    .btn-none:hover {
-                        background-color: green;
-                        color: white;
-                    }
-                    </style>
+                    <button type="submit" class="btn btn-outline-secondary rounded-3">Kirim</button>
                 </form>
             </div>
         </div>
