@@ -8,7 +8,7 @@
 
     <style>
       body{
-        background-color: rgb(217, 220, 223)
+        background-color: rgb(217, 220, 223);
       }
       .navbar {
         display: flex;
@@ -16,8 +16,9 @@
       }
       .container{
         display: flex;
-        justify-content: space-between
+        justify-content: center;
       }
+
     </style>
     <title>Document</title>
 </head>
@@ -33,17 +34,92 @@
   </nav>
 
   <div class="container">
-    @forelse ($aspirasis as $aspirasi)
-    <div class="card m-2  " style="width: 18rem;">
-        <img src="{{asset('storage/posts/'.$aspirasi->foto)}}" class="card-img-top" alt="..." >
-        <div class="card-body " >
-          <p class="card-text" style="height:100px;">{{$aspirasi->keterangan}}</p>
+      <div class="row row-cols-lg-5 gap-3">
+        <div class="card" style="width: 18rem;">
+          <img src="image/smktelkomjkt2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="image/aspirasi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
         </div>
       </div>
-    @empty
-        
-    @endforelse
-</div>
+  </div>
 
 
 
