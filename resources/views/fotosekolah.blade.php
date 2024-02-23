@@ -10,6 +10,10 @@
       body{
         background-color: rgb(217, 220, 223)
       }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+      }
       .container{
         display: flex;
         justify-content: space-between
