@@ -21,7 +21,7 @@
         
         <marquee behavior="" direction="">Ini adalah halaman admin</marquee>
 
-      </div>
+    </div>
       <div class="table-responsive mt-5 m-3">
 
         <form action="/admin-tampilan/search" method="GET">
@@ -65,6 +65,9 @@
                 <a class="btn btn-light" href="/aspirasi/status/{{ $aspirasi->id}}">
                   <i class="bi bi-{{ ( $aspirasi->status )? 'arrow-counterclockwise' : 'check-lg' }}"></i>
                 </a>
+                </a>
+                <a class="btn btn-light" href="/aspirasi/show/{{$aspirasi->id}}">
+                  <i class="bi bi-eye"></i>
                 </a>
                 <a class="btn btn-light" href="/aspirasi/delete/{{$aspirasi->id}}">
                   <i class="bi bi-x-square"></i>
