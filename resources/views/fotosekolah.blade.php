@@ -28,14 +28,23 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container col-xxl-5">
     @forelse ($aspirasis as $aspirasi)
-    <div class="card m-2  " style="width: 18rem;">
-        <img src="{{asset('storage/posts/'.$aspirasi->foto)}}" class="card-img-top" alt="..." >
-        <div class="card-body " >
-          <p class="card-text" style="height:100px;">{{$aspirasi->keterangan}}</p>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="{{asset('storage/posts/'.$aspirasi->foto)}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ $aspirasi->nama }}</h5>
+        <p class="card-text">{{ $aspirasi->keterangan }}</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">NIS : {{ $aspirasi->nissekolah }}</li>
+        <li class="list-group-item">Lokasi : {{ $aspirasi->lokasi }}</li>
+        <li class="list-group-item">Jenis : {{ $aspirasi->jenis }}</li>
+        <li class="list-group-item">Tanggal : {{ $aspirasi->created_at }}</li>
+        <li class="list-group-item list-group-item-{{ $aspirasi->status ? 'success' : 'warning' }}">Status : {{ $aspirasi->status ? 'Success':'Pending'}}</li>
+        <li class="list-group-item">Feedback : {{ $aspirasi->feedback }}</li>
+      </ul>
+    </div>
     @empty
         
     @endforelse
