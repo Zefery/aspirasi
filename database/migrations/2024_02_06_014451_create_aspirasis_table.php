@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('lokasi');
             $table->text('keterangan');
             $table->string('jenis');
+            $table->string('feedback')->nullable();
             $table->boolean('status')->default(false);
             $table->timestamps();
         });

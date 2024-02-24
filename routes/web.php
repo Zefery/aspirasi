@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\AspirasiController;
+use App\Models\Aspirasi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,11 @@ Route::post('/aspirasi/add', [AspirasiController::class, 'add']);
 
 Route::get('/aspirasi/status/{id}', [AspirasiController::class, 'status']);
 Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete']);
+
+Route::get('/aspirasi/show/{id}', [AspirasiController::class, 'show'])->name('show');
+
+Route::patch('/show/feedback/{id}', [AspirasiController::class, 'feedback'])->name('feedback');
+
 
 Route::get('/aspirasi/search', [AspirasiController::class, 'search']);
 Route::get('/admin-tampilan/search', [AdminController::class, 'search']);

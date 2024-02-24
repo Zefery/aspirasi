@@ -21,7 +21,7 @@
         
         <marquee behavior="" direction="">Ini adalah halaman admin</marquee>
 
-      </div>
+    </div>
       <div class="table-responsive mt-5 m-3">
 
         <form action="/admin-tampilan/search" method="GET">
@@ -45,6 +45,7 @@
               <th class="jenis table-info text-center" scope="col">Jenis</th>
               <th class="tanggal table-info text-center" scope="col">Tanggal</th>
               <th class="status table-info text-center" scope="col">Status</th>
+              <th class="status table-info text-center" scope="col">Feedback</th>
               <th class="status table-info text-center" scope="col">Edit</th>
             </tr>
           </thead>
@@ -61,10 +62,14 @@
               <td>{{ $aspirasi->jenis }}</td>
               <td>{{ $aspirasi->created_at }}</td>
               <td class="overflow-auto text-break text-center ">{{ $aspirasi->status ? 'Success':'Pending'}}</td>
+              <td class="overflow-auto text-break">{{ $aspirasi->feedback }}</td>
               <td class="edit">
                 <a class="btn btn-light" href="/aspirasi/status/{{ $aspirasi->id}}">
                   <i class="bi bi-{{ ( $aspirasi->status )? 'arrow-counterclockwise' : 'check-lg' }}"></i>
                 </a>
+                </a>
+                <a class="btn btn-light" href="/aspirasi/show/{{$aspirasi->id}}">
+                  <i class="bi bi-eye"></i>
                 </a>
                 <a class="btn btn-light" href="/aspirasi/delete/{{$aspirasi->id}}">
                   <i class="bi bi-x-square"></i>

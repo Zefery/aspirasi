@@ -19,5 +19,5 @@ class Aspirasi extends Model
     {
         return $this->attributes['Jenis'] = json_decode($value);
     }
-    protected $fillable = ['foto', 'nama', 'keterangan', 'jenis', 'status','nissekolah','lokasi'];
+    protected $fillable = ['foto', 'nama', 'keterangan', 'jenis', 'status','nissekolah','lokasi','feedback'];
 }

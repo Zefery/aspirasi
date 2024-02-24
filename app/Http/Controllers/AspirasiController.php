@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\View\View;
 use App\Models\Aspirasi;
+use Illuminate\View\View;
+use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Storage;
 
@@ -53,9 +53,9 @@ class AspirasiController extends Controller
             'nissekolah' => $request->nissekolah ?? 'default_value', // Assign default if null
             'lokasi' => $request->lokasi,
             'keterangan'   => $request->keterangan,
-            'jenis' => $request->content
+            'jenis' => $request->content,
         ]);
-        
+                
         // $aspirasi->status = false;
         // $aspirasi->save();
 
@@ -69,6 +69,22 @@ class AspirasiController extends Controller
         $aspirasi->save();
         
         return redirect('/admin-tampilan');
+    }
+
+    public function show($id): View
+    {
+        $aspirasis = Aspirasi::findOrFail($id);
+        
+        return view('/show')->with('aspirasis', $aspirasis);
+    }
+
+    public function feedback(Request $request, $id)
+    {
+        $aspirasis = Aspirasi::findOrFail($id);
+        $aspirasis->feedback = $request->input('feedback');
+        $aspirasis->save();
+
+        return redirect()->route('show', $aspirasis->id)->with('success', 'Status berhasil diperbarui.');
     }
 
     public function delete(Request $request, $id): RedirectResponse
