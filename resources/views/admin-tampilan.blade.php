@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/table-admin.css">
     <link rel="stylesheet" href="css/admin.css">
 
-    <title>Document</title>
+    <title>Tampilan Admin</title>
 </head>
 <body>
     <div class="container">

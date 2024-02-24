@@ -29,7 +29,7 @@
     }
     </style>
 
-    <title>Document</title>
+    <title>Homepage</title>
 </head>
 
 <body>

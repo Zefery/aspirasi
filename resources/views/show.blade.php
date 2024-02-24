@@ -16,7 +16,7 @@
             padding-left: 70%;
         }
     </style>
-    <title>Document</title>
+    <title>You can see it</title>
 </head>
 <body>
     <nav>

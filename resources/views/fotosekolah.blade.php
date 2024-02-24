@@ -15,7 +15,7 @@
         justify-content: space-between
       }
     </style>
-    <title>Document</title>
+    <title>Gallery</title>
 </head>
 <body>
   <nav class="navbar bg-body-tertiary shadow mb-5 ">
