@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="css/table.css">
 
     <style>
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-    }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
 
-    marquee {
-        font-size: 30px;
-    }
+        marquee {
+            font-size: 30px;
+        }
 
-    .container {
-        display: flex;
-        justify-content: center;
-    }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
     <title>Homepage</title>
@@ -46,14 +46,11 @@
 
     <div class="container mt-5 mb-5 shadow-lg rounded-3 p-5 ">
         <div class="left mt-5 m-3 ">
-            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, possimus odit totam laboriosam iste
-                eos!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque necessitatibus tempora, quisquam
-                cumque voluptates nulla est fuga sed nemo alias pariatur quis nesciunt tenetur id et, quaerat architecto
-                animi porro.</p>
+            <h4>Ayo Lapor! masri sama sama kita buat lingkungan kita menjadi Aman, Sehat, dan Nyaman</h4>
+            <p>tidak perlu ragu, disini kami akan membantu kamu tentang apa yang terjadi di sekolah. jangan pernah ragu kami tidak akan membiarkan kamu merasa tidak nyaman</p>
 
             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
-                Buka Formulir
+                Lapor Pak!
             </button>
 
         </div>
@@ -64,9 +61,8 @@
         </div>
     </div>
 
-    <marquee class="mb-5" behavior="" direction="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit
-        ipsam vel aliquid commodi, sed odio praesentium ad necessitatibus culpa maxime. Suscipit iusto non soluta
-        facilis obcaecati ducimus quos natus?
+    <marquee class="mb-5" behavior="" direction="">
+        Merasa tidak nyaman di sekolah? ayo beritahu kami tentang permasalahan kamu dan kami akan memperbaikinya untukmu agar kamu nyaman. Telkom Sehat Telkom bersih Telkom Nyaman
     </marquee>
 
     <div class="table-responsive mt-5 p-3 ">
