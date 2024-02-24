@@ -92,6 +92,7 @@
                         <th class="jenis table-info text-center" scope="col">Jenis</th>
                         <th class="tanggal table-info text-center" scope="col">Tanggal</th>
                         <th class="status table-info text-center" scope="col">Status</th>
+                        <th class="status table-info text-center" scope="col">Feedback</th>
                     </tr>
                 </thead>
                 @forelse ($aspirasis as $aspirasi)
@@ -107,6 +108,7 @@
                         <td>{{ $aspirasi->jenis }}</td>
                         <td>{{ $aspirasi->created_at }}</td>
                         <td class="overflow-auto text-break">{{ $aspirasi->status ? 'Success':'Pending'}}</td>
+                        <td class="overflow-auto text-break">{{ $aspirasi->feedback }}</td>
                     </tr>
                 </tbody>
                 @empty
