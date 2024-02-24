@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AspirasiController::class, 'index']);
 Route::get('/foto-sekolah', [AspirasiController::class, 'foto']);
-Route::get('/admin-tampilan', [AspirasiController::class, 'admin_tampilan']);
+Route::get('/admin-tampilan', [AspirasiController::class, 'admin_tampilan'])->name('admin-tampilan');
 Route::get('/admin', [AspirasiController::class, 'admin']);
 
 Route::post('/aspirasi/add', [AspirasiController::class, 'add']);

@@ -28,7 +28,7 @@
     </div>
   </nav>
 
-  <div class="container col-xxl-5">
+  <div class="container gap-4 col-xxl-5">
     @forelse ($aspirasis as $aspirasi)
     <div class="card" style="width: 18rem;">
       <img src="{{asset('storage/posts/'.$aspirasi->foto)}}" class="card-img-top" alt="...">

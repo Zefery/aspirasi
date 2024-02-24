@@ -84,7 +84,7 @@ class AspirasiController extends Controller
         $aspirasis->feedback = $request->input('feedback');
         $aspirasis->save();
 
-        return redirect()->route('show', $aspirasis->id)->with('success', 'Status berhasil diperbarui.');
+        return redirect()->route('admin-tampilan', $aspirasis->id)->with('success', 'Status berhasil diperbarui.');
     }
 
     public function delete(Request $request, $id): RedirectResponse
